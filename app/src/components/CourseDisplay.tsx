@@ -1,4 +1,4 @@
-    import { Course, Section } from "@scripts/soc";
+import { Course, Section } from "@scripts/soc";
 import SectionDisplay from "@components/SectionDisplay";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
