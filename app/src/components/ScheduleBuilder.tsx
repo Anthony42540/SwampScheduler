@@ -185,10 +185,10 @@ export default class ScheduleBuilder extends Component<Props, States> {
             );
 
         return (
-            <div className="min-h-screen flex flex-col h-screen p-3">
+            <div className="min-h-screen flex flex-col h-screen p-3 dark:bg-neutral-900">
                 {/* Title & Term Selector */}
                 <div className="flex">
-                    <p className="text-2xl text-slate-700 inline-block">
+                    <p className="text-2xl text-slate-700 inline-block dark:text-blue-600">
                         🐊 Swamp Scheduler 📆
                     </p>
 
@@ -196,7 +196,7 @@ export default class ScheduleBuilder extends Component<Props, States> {
 
                     <select
                         id="term"
-                        className="bg-sky-500 hover:bg-sky-400 border border-blue-300 text-white text-sm rounded-lg p-2.5 mr-1 text-center"
+                        className="bg-sky-500 hover:bg-sky-400 borderborder-blue-300 text-white text-sm rounded-lg p-2.5 mr-1 text-center dark:text-stone-300 dark:bg-blue-600 dark:border-neutral-700"
                         defaultValue={this.state.soc.info.termStr}
                         onChange={(e) =>
                             this.setSOC(e.target.value, defaultProgram)
@@ -217,7 +217,7 @@ export default class ScheduleBuilder extends Component<Props, States> {
 
                     <select
                         id="limit"
-                        className="bg-sky-500 hover:bg-sky-400 border border-blue-300 text-white text-sm rounded-lg p-2.5 mr-1 text-center"
+                        className="bg-sky-500 hover:bg-sky-400 borderborder-blue-300text-white text-sm rounded-lg p-2.5 mr-1 text-center dark:text-stone-300 dark:bg-blue-600 dark:border-neutral-700"
                         defaultValue={this.state.limit}
                         onChange={(e) =>
                             this.setState({ limit: Number(e.target.value) })
@@ -242,7 +242,7 @@ export default class ScheduleBuilder extends Component<Props, States> {
                     </div>
 
                     {/* Selected */}
-                    <div className="overflow-y-auto w-full p-1">
+                    <div className="overflow-y-auto w-full p-1 dark:text-blue-600">
                         <MultipleSelectionDisplay
                             selections={this.state.selections}
                             handleDrop={this.handleDrop.bind(this)}
@@ -256,7 +256,7 @@ export default class ScheduleBuilder extends Component<Props, States> {
                     </div>
 
                     {/* Generated Schedules */}
-                    <div className="overflow-y-auto w-full p-1">
+                    <div className="overflow-y-auto w-full p-1 dark:text-blue-600">
                         <MultipleScheduleDisplay
                             schedules={this.state.schedules}
                             key={new Date().getTime()}

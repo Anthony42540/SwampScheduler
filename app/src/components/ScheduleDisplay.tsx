@@ -77,7 +77,7 @@ export default class ScheduleDisplay extends Component<Props, States> {
                             className={classNames([
                                 "border-solid",
                                 "border-2",
-                                "border-gray-300",
+                                "border-gray-300 dark:border-gray-600",
                                 "rounded",
                                 "whitespace-nowrap",
                                 "text-center",
@@ -121,7 +121,7 @@ export default class ScheduleDisplay extends Component<Props, States> {
                             className={classNames([
                                 "border-solid",
                                 "border-2",
-                                "border-gray-400",
+                                "border-gray-400 dark:border-gray-600 dark:text-black",
                                 color,
                                 "rounded",
                                 "whitespace-nowrap",
@@ -156,7 +156,7 @@ export default class ScheduleDisplay extends Component<Props, States> {
                             className={classNames([
                                 "border-solid",
                                 "border-2",
-                                "border-gray-400",
+                                "border-gray-400 dark:border-gray-600 dark:text-black",
                                 color,
                                 "rounded",
                                 "whitespace-nowrap",
@@ -188,7 +188,7 @@ export default class ScheduleDisplay extends Component<Props, States> {
                         handleExportScheduleClick(this.props.schedule)
                     }
                     className={
-                        "bg-sky-500 hover:bg-sky-400 border border-blue-300 text-white text-sm rounded-lg p-1.5 mr-1 text-center mt-1.5 mb-1.5"
+                        "bg-sky-500 hover:bg-sky-400 border border-blue-300 text-white text-sm rounded-lg p-1.5 mr-1 text-center mt-1.5 mb-1.5 dark:text-stone-300 dark:bg-blue-600 dark:border-neutral-700"
                     }
                 >
                     Export Schedule
@@ -200,7 +200,7 @@ export default class ScheduleDisplay extends Component<Props, States> {
                                 className={classNames([
                                     "border-solid",
                                     "border-2",
-                                    "border-gray-400",
+                                    "border-gray-400 dark:border-gray-600 dark:text-black",
                                     getSectionColor(s),
                                     "rounded",
                                     "text-center",
@@ -222,7 +222,7 @@ export default class ScheduleDisplay extends Component<Props, States> {
                                 .map((p) => (
                                     <div
                                         className={
-                                            "border-solid border-2 border-gray-400 bg-gray-200 rounded text-center w-full h-6 px-0.5 min-w-full"
+                                            "border-solid border-2 border-gray-400 bg-gray-200 rounded text-center w-full h-6 px-0.5 min-w-full dark:border-gray-600 dark:text-black"
                                         }
                                     >
                                         <b>
@@ -237,7 +237,7 @@ export default class ScheduleDisplay extends Component<Props, States> {
                             {onlineSections.length > 0 && (
                                 <div
                                     className={
-                                        "border-solid border-2 border-gray-400 bg-gray-200 rounded text-center w-full h-6 px-0.5 min-w-full"
+                                        "border-solid border-2 border-gray-400 bg-gray-200 rounded text-center w-full h-6 px-0.5 min-w-full dark:border-gray-600 dark:text-black"
                                     }
                                 >
                                     <div
@@ -265,7 +265,7 @@ export default class ScheduleDisplay extends Component<Props, States> {
                                                         className={classNames([
                                                             "border-solid",
                                                             "border-2",
-                                                            "border-gray-400",
+                                                            "border-gray-400 dark:border-gray-600 dark:text-black",
                                                             getSectionColor(
                                                                 ind,
                                                             ),

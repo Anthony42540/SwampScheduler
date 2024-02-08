@@ -1,4 +1,4 @@
-import { Course, Section } from "@scripts/soc";
+    import { Course, Section } from "@scripts/soc";
 import SectionDisplay from "@components/SectionDisplay";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -18,21 +18,21 @@ export default function CourseDisplay(props: Props) {
             {/* COURSE INFORMATION */}
             <Draggable type={"uid"} data={props.course.uid}>
                 <div className="m-1">
-                    <div className="w-full p-2 rounded-lg shadow-sm shadow-slate-400">
+                    <div className="w-full p-2 rounded-lg shadow-sm shadow-slate-400 dark:shadow-slate-200">
                         {/* Course Code & Name */}
-                        <p className="text-slate-700 underline">
+                        <p className="text-slate-700 underline dark:text-blue-600">
                             <b>{props.course.code}</b> {props.course.name}
                         </p>
 
                         {/* Description */}
                         <div className="mx-2">
-                            <p className="text-slate-700 text-sm">
+                            <p className="text-slate-700 text-sm dark:text-blue-200">
                                 {props.course.description}
                             </p>
                         </div>
 
                         {/* Additional Information */}
-                        <div className={"text-center text-slate-700 text-xs"}>
+                        <div className={"text-center text-slate-700 text-xs dark:text-blue-300"}>
                             <i>({props.course.credits.display} Credits)</i>
                         </div>
                     </div>
